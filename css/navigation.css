@@ -1,0 +1,20 @@
+.navigation {
+  margin-top: 100px;
+  border-top: 1px solid #d5c9be;
+  border-bottom: 1px solid #d5c9be;
+}
+
+.navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 40px 0;
+}
+
+.navigation__item {
+  font-size: 18px;
+  font-style: italic;
+  text-transform: uppercase;
+  cursor: pointer;
+}
