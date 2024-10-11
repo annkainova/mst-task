@@ -10,35 +10,120 @@
 </head>
 
 <body>
-  <header class="container">
-
-    <div class="header">
+  <header class="header">
+    <div class="container header__wrapper">
       <div class="logo">Lorem</div>
       <ul class="header__nav">
-        <li>consectetur</li>
-        <li>sit amet</li>
-        <li>eiusmod tempor</li>
+        <li><a href="">consectetur</a></li>
+        <li><a href="">sit amet</a></li>
+        <li><a href="">eiusmod tempor</a></li>
       </ul>
     </div>
   </header>
   <main>
-    <section class="container banner">
-      <div>
-        <h1 class="h1 banner__header">Lorem ipsum dolor sit amet
-          <span>sed do eiusmod tempor </span>
-        </h1>
+    <section class="banner">
+      <div class=" container banner__wrapper ">
+        <div class="  banner__text">
+          <h1 class="h1 banner__header">Lorem ipsum dolor sit amet
+            <p class="h1__subtitle">sed do eiusmod tempor </p>
+          </h1>
 
-        <ul class="banner__list">
-          <li class="banner__item">do <span class="banner__item--accent">$10 000</span> consectetur elit</li>
-          <li class="banner__item"> <span class="banner__item--accent">30%</span> sed do eiusmod tempor </li>
-          <li class="banner__item">do<span class="banner__item--accent"> 17%</span> adipiscing elit sed do</li>
-        </ul>
+          <ul class="banner__list">
+            <li class="banner__item">
+              <p>do <span class="banner__item--accent">$10 000</span> consectetur elit</p>
+            </li>
+            <li class="banner__item">
+              <p><span class="banner__item--accent">30%</span> sed do eiusmod tempor</p> 
+            </li>
+            <li class="banner__item">
+              <p>do<span class="banner__item--accent"> 17%</span> adipiscing elit sed do</p>
+            </li>
+          </ul>
 
-        <a class="button" href="">
-          Order
-        </a>
+          <a class="button banner__button" href="">
+            Order
+          </a>
+        </div>
+
+        <div class="banner__image">
+          <img src="/images/banner.jpg" alt="banner image">
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <section class="active">
+      <div class="active__image">
+        <img src="/images/image2.webp" alt="banner image">
+      </div>
+      <article class=" active__wrapper">
+        <div class="article__content">
+          <ul class="active__list">
+            <li class="active__item">
+              <p>Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor</p>
+            </li>
+            <li class="active__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse perspiciatis quas
+              asperiores error mollitia, quam consequatur repellendus sunt suscipit excepturi architecto magni doloribus
+              ullam cupiditate corporis necessitatibus rerum. Reprehenderit, ullam.</li>
+            <li class="active__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor </li>
+            <li class="active__item">Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor</li>
+          </ul>
+
+          <a class="button active__button" href="">
+            Order
+          </a>
+        </div>
+      </article>
+
+
+      <div class="active__image">
+        <img src="/images/imag23.webp" alt="banner image">
       </div>
     </section>
+
+
+    <section class="container">
+      <div class="form-section grid">
+        <div class="form-section__wrapper">
+          <h2 class="form-section__header">Consectetur
+            sed do eiusmod </h2>
+          <form action="/submit" method="post" class="contact-form">
+            <div class="form-group">
+              <div class="form-group__input">
+                <label>
+                  <input type="text" name="name" placeholder="Name" required>
+                </label>
+              </div>
+
+              <div class="form-group__input">
+                <label>
+                  <input type="email" name="email" placeholder="Email" required>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group checkbox">
+              <label>
+                <input type="checkbox" name="accept" placeholder="Your Email" required>
+                I accept Privacy policy
+              </label>
+            </div>
+
+            <div class="form-group ">
+              <button type="submit" class="submit-button button">Send Message</button>
+            </div>
+          </form>
+        </div>
+        <div class="form-section__image">
+          <img src="/images/contactus.webp" alt="contact us">
+        </div>
+      </div>
+    </section>
+
 
   </main>
   <footer></footer>

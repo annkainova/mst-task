@@ -1,0 +1,144 @@
+.banner {
+  position: relative;
+  display: flex;
+  height: calc(1009px - 134px);
+  background: #222222;
+}
+
+
+@media (max-width: 1040px) {
+  .banner {
+    height: 100%;
+  }
+}
+
+.banner__wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (max-width: 1040px) {
+  .banner__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+  }
+}
+
+.banner__text {
+  grid-column: 1 / 6;
+}
+
+@media (max-width: 1040px) {
+  .banner__text {
+    padding-top: 300px;
+  }
+}
+
+.banner__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--font-size);
+}
+
+.banner__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--font-size);
+}
+
+.banner__item::before {
+  content: '';
+  display: block;
+  width: 39px;
+  height: 37px;
+  background: url('../assets/icons/check-icon.svg') no-repeat;
+}
+
+.banner__item--accent {
+  font-family: var(--accent-font);
+  font-size: var(--h2);
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.banner__button {
+  display: inline-block;
+  padding: 24px 56px;
+  box-sizing: border-box;
+  font-family: var(--ff-bold);
+  background: var(--light-color);
+  margin-top: 40px;
+  color: #222222;
+  transition: all 0.5s ease-in-out;
+}
+
+.banner__button:hover {
+  background: var(--grey-color);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.banner__button:active {
+  transform: translateY(2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.banner__image {
+  grid-column: 8/-1;
+  height: 100%;
+  z-index: 110;
+}
+
+.banner__image img {
+  height: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 1440px) {
+  .banner__image {
+    position: absolute;
+    width: 600px;
+    height: calc(100% + 134px);
+    right: 0;
+    top: -134px;
+    z-index: 110;
+  }
+}
+
+@media (max-width: 1280px) {
+  .banner__image {
+    grid-column: 6/-1;
+    bottom: 0;
+    z-index: 90;
+  }
+}
+
+
+@media (max-width: 1040px) {
+  .banner__image {
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.h1 {
+  font-family: var(--accent-font);
+  font-size: var(--h1);
+  line-height: 120%;
+  font-weight: 400;
+  margin-bottom: 64px;
+}
+
+.h1__subtitle {
+  font-family: var(--ff);
+  font-size: var(--h3);
+  font-weight: 400;
+}

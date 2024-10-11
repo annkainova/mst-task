@@ -1,17 +1,46 @@
+@import url('header.css');
+@import url('banner.css');
+@import url('active.css');
+@import url('form.css');
+
+@font-face {
+  font-family: 'Prata-Regular';
+  src: url('../assets/fonts/Prata-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url('../assets/fonts/ArialMT.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arial-Bold';
+  src: url('../assets/fonts/Arial-BoldMT.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
-  --content-width: 1597px;
+  --content-width: 1125px;
   --container-offset: 20px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   --main-bg-color: #282829;
-  /* --accent-color: #222222; */
   --light-color: #ffffff;
   --secondary-color: #38535d;
   --grey-color: #d6d6d6;
 
-  --font-size: 24px;
-  --ff: 'Roboto', sans-serif;
-  --header-font: "Prata-Regular", sans-serif;
+  --font-size: 16px;
+  --h1: 54px;
+  --h2: 36px;
+  --h3: 30px;
+  --ff: 'Arial', sans-serif;
+  --ff-bold: 'Arial-Bold', sans-serif;
+  --accent-font: "Prata-Regular", sans-serif;
 }
 
 * {
@@ -36,6 +65,7 @@ body {
   min-width: 320px;
   font-family: var(--ff), sans-serif;
   font-size: var(--font-size, 24px);
+  font-weight: 400;
   color: var(--light-color);
   background: var(--main-bg-color);
 }
@@ -46,8 +76,8 @@ main {
 
 img {
   height: auto;
-  max-width: 100%;
   object-fit: cover;
+  max-width: 100%;
 }
 
 a {
@@ -70,4 +100,15 @@ li {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 16px;
+}
+
+
+.button {
+  border-radius: 4px;
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
+
+  text-align: center;
+  text-transform: uppercase;
 }
