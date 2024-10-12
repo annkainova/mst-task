@@ -3,6 +3,7 @@
 @import url('active.css');
 @import url('form.css');
 @import url('navigation.css');
+@import url('feedback.css');
 @import url('footer.css');
 
 @font-face {
@@ -40,6 +41,7 @@
   --h1: 54px;
   --h2: 36px;
   --h3: 30px;
+  --h4: 20px;
   --ff: 'Arial', sans-serif;
   --ff-bold: 'Arial-Bold', sans-serif;
   --accent-font: "Prata-Regular", sans-serif;
@@ -94,7 +96,6 @@ li {
 .container {
   margin: 0 auto;
   padding: 0 var(--container-offset);
-  width: 100%;
   max-width: var(--container-width);
 }
 
@@ -107,10 +108,47 @@ li {
 
 .button {
   border-radius: 4px;
-  /* display: flex; */
-  /* align-items: center;
-  justify-content: center; */
-
   text-align: center;
   text-transform: uppercase;
+}
+
+.h1 {
+  font-family: var(--accent-font);
+  font-size: var(--h1);
+  line-height: 120%;
+  font-weight: 400;
+  margin-bottom: 64px;
+}
+
+
+.h1__subtitle {
+  font-family: var(--ff);
+  font-size: var(--h3);
+  font-weight: 400;
+  line-height: 130%;
+  margin-top: 16px;
+}
+
+@media (max-width: 720px) {
+  .h1 {
+    font-size: var(--h2);
+  }
+}
+
+@media (max-width: 720px) {
+  .h1__subtitle {
+    font-size: var(--h4);
+  }
+}
+
+
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

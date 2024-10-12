@@ -31,11 +31,13 @@
 
 .banner__text {
   grid-column: 1 / 6;
+  padding-top: 100px;
 }
 
 @media (max-width: 1040px) {
   .banner__text {
-    padding-top: 300px;
+    padding-top: 200px;
+    padding-bottom: 40px;
   }
 }
 
@@ -58,6 +60,7 @@
   width: 39px;
   height: 37px;
   background: url('../assets/icons/check-icon.svg') no-repeat;
+  background-size: contain;
 }
 
 .banner__item--accent {
@@ -66,6 +69,13 @@
   line-height: 150%;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+}
+
+
+@media (max-width: 720px) {
+  .banner__item--accent {
+    font-size: var(--h3);
+  }
 }
 
 .banner__button {
@@ -79,16 +89,19 @@
   transition: all 0.5s ease-in-out;
 }
 
-.banner__button:hover {
-  background: var(--grey-color);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-  transform: translateY(-2px);
+@media (hover: hover) {
+  .banner__button:hover {
+    background: var(--grey-color);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+  }
 }
 
 .banner__button:active {
   transform: translateY(2px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+
 
 .banner__image {
   grid-column: 8/-1;
@@ -99,6 +112,7 @@
 .banner__image img {
   height: 100%;
   max-width: 100%;
+
 }
 
 @media (max-width: 1440px) {
@@ -123,22 +137,6 @@
 
 @media (max-width: 1040px) {
   .banner__image {
-    position: relative;
-    top: 0;
-    width: 100%;
+    display: none;
   }
-}
-
-.h1 {
-  font-family: var(--accent-font);
-  font-size: var(--h1);
-  line-height: 120%;
-  font-weight: 400;
-  margin-bottom: 64px;
-}
-
-.h1__subtitle {
-  font-family: var(--ff);
-  font-size: var(--h3);
-  font-weight: 400;
 }

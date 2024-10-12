@@ -83,15 +83,20 @@
   margin-top: 26px;
   color: var(--light-color);
   transition: all 0.5s ease-in-out;
-  border: solid 1px #222222;  
+  border: solid 1px #222222;
 }
 
-.submit-button:hover {
-  background: var(--main-bg-color);
-  color: var(--light-color);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-  transform: translateY(-2px);
+
+@media (hover: hover) {
+  .submit-button:hover {
+    background: var(--main-bg-color);
+    color: var(--light-color);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+  }
 }
+
+
 
 .submit-button:active {
   transform: translateY(2px);
@@ -116,6 +121,9 @@
   transition: all 1s ease-in-out;
 }
 
-.form-section__image:hover img {
-  transform: scale(1.05);
+
+@media (hover: hover) {
+  .form-section__image:hover img {
+    transform: scale(1.05);
+  }
 }
