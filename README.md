@@ -1,5 +1,4 @@
 ## Тестовое задание для MST 
-==========================
 
 Ссылка: https://mst-test-task-kainova.netlify.app/
 
