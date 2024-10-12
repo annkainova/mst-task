@@ -22,16 +22,29 @@
 }
 
 .carousel-track {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  -moz-transition: -moz-transform 0.5s ease-in-out;
+  -o-transition: -o-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
 }
 
 .carousel-slide {
   box-sizing: border-box;
   min-width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
   align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
   padding: 30px;
 }
@@ -60,6 +73,10 @@
 .carousel-button {
   position: absolute;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   transform: translateY(-50%);
   background-color: #222222;
   border: none;
@@ -72,7 +89,7 @@
   opacity: 0.33;
 }
 
-@media(hover: hover) {
+@media (hover: hover) {
   .carousel-button:hover {
     opacity: 1;
   }

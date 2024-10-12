@@ -1,10 +1,11 @@
 .banner {
   position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   height: calc(1009px - 134px);
   background: #222222;
 }
-
 
 @media (max-width: 1040px) {
   .banner {
@@ -23,7 +24,11 @@
 
 @media (max-width: 1040px) {
   .banner__wrapper {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 90px;
   }
@@ -42,13 +47,19 @@
 }
 
 .banner__list {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
   gap: var(--font-size);
 }
 
 .banner__item {
   position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   gap: var(--font-size);
@@ -71,7 +82,6 @@
   text-transform: uppercase;
 }
 
-
 @media (max-width: 720px) {
   .banner__item--accent {
     font-size: var(--h3);
@@ -86,6 +96,9 @@
   background: var(--light-color);
   margin-top: 40px;
   color: #222222;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
@@ -93,15 +106,22 @@
   .banner__button:hover {
     background: var(--grey-color);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
     transform: translateY(-2px);
   }
 }
 
 .banner__button:active {
+  -webkit-transform: translateY(2px);
+  -moz-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  -o-transform: translateY(2px);
   transform: translateY(2px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
-
 
 .banner__image {
   grid-column: 8/-1;
@@ -112,7 +132,6 @@
 .banner__image img {
   height: 100%;
   max-width: 100%;
-
 }
 
 @media (max-width: 1440px) {
@@ -133,7 +152,6 @@
     z-index: 90;
   }
 }
-
 
 @media (max-width: 1040px) {
   .banner__image {

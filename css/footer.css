@@ -1,10 +1,16 @@
-.footer {}
-
 .footer__wrapper {
   margin-top: 50px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
   justify-content: space-between;
+  -webkit-align-items: center;
+  -ms-align-items: center;
   align-items: center;
   gap: 24px;
 }
@@ -12,13 +18,16 @@
 .social-media {}
 
 .social-media__list {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
   justify-content: space-between;
   gap: 24px;
 }
 
 .social-media__item {}
-
 
 .navigation__button {
   display: inline-block;
@@ -27,27 +36,50 @@
   font-family: var(--ff-bold);
   background: var(--light-color);
   color: #222222;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 @media (hover: hover) {
-.navigation__button:hover {
+  .navigation__button:hover {
     background: var(--grey-color);
+    -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
     transform: translateY(-2px);
   }
 }
 
 .navigation__button:active {
+  -webkit-transform: translateY(2px);
+  -moz-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  -o-transform: translateY(2px);
   transform: translateY(2px);
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .footer__copyright {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
   justify-content: space-between;
   gap: 24px;
+  -webkit-align-items: center;
+  -ms-align-items: center;
   align-items: center;
   margin-top: 40px;
   padding-bottom: 20px;
