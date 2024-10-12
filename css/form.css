@@ -40,6 +40,12 @@
   margin-bottom: 26px;
 }
 
+@media (max-width: 720px) {
+  .form-section__header {
+    font-size: var(--h3);
+  }
+}
+
 .contact-form {
   display: -webkit-flex;
   display: -ms-flexbox;

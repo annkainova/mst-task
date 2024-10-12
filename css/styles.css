@@ -57,14 +57,13 @@ html {
   scrollbar-color: var(--primary-color) #fff;
   scrollbar-gutter: stable;
   scrollbar-width: thin;
-}
-
-@media (prefers-reduced-motion: no-preference) {
   -webkit-scroll-behavior: smooth;
   -moz-scroll-behavior: smooth;
   -ms-scroll-behavior: smooth;
   scroll-behavior: smooth;
 }
+
+
 
 body {
   overflow-x: hidden;
@@ -142,6 +141,10 @@ li {
   .h1__subtitle {
     font-size: var(--h4);
   }
+}
+
+section {
+  scroll-margin-top: 150px;
 }
 
 
